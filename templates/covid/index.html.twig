@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CovidController!{% endblock %}
+
+{% block body %}
+<main>
+    <section>
+        <form>
+            
+                <select id="country">
+                    <option value="Select">Selecionar</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                  
+                </select>
+
+                <table id="tbody"></table>
+        </form>
+        
+    </section>
+    
+   
+</main>
+<footer>
+<span>Ultimo acesso:</span>
+<span id="lastCountry"></span>
+<span id="lastData"></span>
+</footer>
+
+<script src="{{asset('javascript/script.js')}}"></script> 
+{% endblock %}
