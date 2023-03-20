@@ -21,7 +21,7 @@ const selectCountry = country.addEventListener("change", async () => {
 
         const lastCountry = document.getElementById('lastCountry')
         const lastData = document.getElementById('lastData')
-        lastCountry.innerHTML = lastAcess.country
+        lastCountry.innerHTML = lastAcess.country + " - "
         lastData.innerHTML = lastAcess.date
         const table = document.getElementById('tbody');
         table.innerText = ''
